@@ -1,0 +1,231 @@
+/* Bebas Neue Bold - Latin */
+@font-face {
+	font-family: 'Bebas Neue Bold';
+	src: url('../fonts/bebas_neue_bold.eot'); /* IE 9 Compatibility Mode */
+	src: url('../fonts/bebas_neue_bold.eot?#iefix') format('embedded-opentype'), /* IE < 9 */
+		url('../fonts/bebas_neue_bold.woff2') format('woff2'), /* Super Modern Browsers */
+		url('../fonts/bebas_neue_bold.woff') format('woff'), /* Firefox >= 3.6, any other modern browser */
+		url('../fonts/bebas_neue_bold.ttf') format('truetype'), /* Safari, Android, iOS */
+		url('../fonts/bebas_neue_bold.svg#bebas_neue_bold') format('svg'); /* Chrome < 4, Legacy iOS */
+}
+/* open-sans-regular - latin */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: local(''),
+       url('../fonts/open-sans-v23-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('../fonts/open-sans-v23-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* custom styles ===================================*/
+html {
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+}
+*, *::before, *::after {
+    -webkit-box-sizing: inherit;
+            box-sizing: inherit;
+}
+body {
+    font-family: 'Open Sans';
+    font-weight: normal;
+    color: #102746;
+}
+img {
+    max-width: 100%;
+    height: auto;
+}
+.wrapper {
+	max-width: 1140px;
+	padding: 0 15px;
+	margin: 0 auto;
+}
+.section__title {
+	font-weight: 700;
+	font-size: 26px;
+	line-height: 30px;
+	color: #48555b;
+	letter-spacing: 2px;
+}
+/* header */
+.header {
+	max-width: 100%;
+	height: 100vh;
+}
+/* intro */
+.intro {
+	background: #102746 url('../img/intro/intro-bg.jpg') center no-repeat;
+	background-size: cover;
+	color: #fff;
+	text-align: center;
+	
+	max-width: 100%;
+	height: calc(100vh - 70px);
+
+	padding: 40px 0 116px;
+
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+.intro__title {
+	font-family: 'Bebas Neue Bold';
+	font-size: 60px;
+	line-height: 70px;
+	letter-spacing: 5px;
+	text-transform: uppercase;
+}
+.intro__subtitle {
+	font-size: 16px;
+	line-height: 21px;
+}
+.pointer {
+	font-size: 11px;
+	line-height: 14px;
+	letter-spacing: 3px;
+	text-transform: uppercase;
+}
+/* navigation */
+.header__nav {
+	padding: 25px 0;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.header__list {
+	display: flex;
+	flex-wrap: wrap;	
+}
+.header__item:not(:last-child) {
+	margin-right: 40px;
+}
+.header__link {
+	color: #48555b;
+	font-size: 16px;
+	font-weight: 700;
+	text-decoration: none;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+}
+.header__link:hover,
+.header__link:active,
+.header__link:focus,
+.blue__word {
+	color: #00a4e5;
+}
+
+/* about */
+.about {
+	padding: 50px 0 120px;
+}
+.about__title {
+	text-align: center;
+	position: relative;
+	margin-bottom: 90px;
+}
+.about__title::after {
+	content: '';
+	display: block;
+	width: 50px;
+	height: 2px;
+	background-color: #00a4e5;
+
+	position: absolute;
+	bottom: -10px;
+	left: 50%;
+	z-index: 2;
+	transform: translateX(-50%);
+}
+.about-data__title {
+	font-size: 22px;
+	line-height: 30px;
+	font-weight: 700;
+	max-width: 400px;
+	margin-bottom: 30px;
+}
+.about-data__text {
+	font-size: 13px;
+	line-height: 23px;
+	color: #48555b;	
+	max-width: 400px;
+}
+.about__inner {
+
+	display: flex;
+	flex-wrap: wrap;
+	max-width: 100%;
+	justify-content: space-between;
+}
+.about__data,
+.about__list {
+	max-width: 48%;
+}
+.about__list {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-column-gap: 20px;
+	align-self: flex-end;
+}
+.about-item__pic {
+	position: relative;	
+}
+.photo__descr {
+	position: absolute;
+	top: 10px;
+	left: 10px;
+
+	font-size: 24px;
+	line-height: 30px;
+	font-weight: 900;
+	text-transform: uppercase;
+	color: #fff;
+}
